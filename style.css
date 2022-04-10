@@ -11,16 +11,59 @@ body{
 nav{
    display: flex;
    justify-content: center;
-    
+   flex-wrap: wrap;
     
     
 }
+
 .navcontainer{
     height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 80%;
+  
+}
+
+
+.nav-ul{
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 40px;
+   
+    
+}
+
+.barlogo{
+    cursor: pointer;
+}
+.nav-ul.show{
+    display: flex;
+    
+
+}
+
+.colorlink{
+    background-color: rgb(255, 255, 255);
+    height: 65vh;
+    width: 20vh;
+    padding: 10px;
+}
+.colorlink>li{
+    text-decoration: none;
+    list-style: none;
+    line-height: 65px;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+li>a{
+    text-decoration: none;
 }
 main{
     height: 30vh;
@@ -54,6 +97,7 @@ main{
     height: 15vh;
     
     background-color: rgb(97, 228, 130);
+    
     border-radius: 12px;
     margin-left: 15px;
 }
@@ -66,7 +110,7 @@ main{
 }
 .divcon{
     height: 20vh;
-    
+    margin: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,7 +144,7 @@ footer{
    
 }
 .qr> span{
-    font-family: 'Pacifico', cursive;
+    font-family: 'Poppins', sans-serif;
 }
 .qrimg{
     border: 2px solid rgb(168, 168, 168);
